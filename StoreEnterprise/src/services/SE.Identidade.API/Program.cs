@@ -11,11 +11,11 @@ namespace SE.Identidade.API
             CreateHostBuilder(args).Build().Run();
         }
 
-        // Configuração do Host
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    // Aqui indicamos que a classe Startup será utilizada
                     webBuilder.UseStartup<Startup>();
                 });
     }
