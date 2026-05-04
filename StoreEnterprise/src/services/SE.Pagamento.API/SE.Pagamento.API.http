@@ -1,0 +1,6 @@
+@SE.Pagamento.API_HostAddress = http://localhost:5271
+
+GET {{SE.Pagamento.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
